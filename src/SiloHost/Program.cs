@@ -18,8 +18,8 @@ namespace OrleansSiloHost
                 .UseOrleans(builder =>
                 {
                     builder
-                        //.UseLocalhostClustering()
-                        .UseLocalhostClustering(11112, 30001)
+                        .UseLocalhostClustering()
+                        //.UseLocalhostClustering(11112, 30001)
                         //.UseLocalhostClustering(11113,30002)
                         .Configure<ClusterOptions>(options =>
                         {
